@@ -63,7 +63,7 @@ $ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 6 -nm 3 -
 
 <b>-ha 80,10,10</b>: role assignment hard-assigned to 80 workers, 10 validators and 10 miners for each communication round. A <b>*</b> in <b>-ha</b> means the corresponding number of roles are not limited. e.g., <b>-ha \*,5,\*</b> means at least 5 validators would be assigned in each communication round, and the rest of the devices are dynamically and randomly assigned to any role. <b>-ha \*,\*,\*</b> means the role-assigning in each communication round is completely dynamic and random.
 
-<b>-aio 1</b>: <i>aio</i> means "all in one network", namely, every device in the emulation has every other device in its peer list. This is to simulate that FedAnil runs on a permissioned blockchain. If using <b>-aio 0</b>, the emulation will let a device (registrant) randomly register with another device (register) and copy the register's peer list.
+<b>-aio 1</b>: <i>aio</i> means "all in one network", namely, every device in the emulation has every other device in its peer list. This is to simulate that FedAnil runs on a permissioned blockchain (consortium blockchain). If using <b>-aio 0</b>, the emulation will let a device (registrant) randomly register with another device (register) and copy the register's peer list.
 
 <b>-pow 0</b>: the argument of <b>-pow</b> specifies the proof-of-work difficulty. When using 0, FedAnil runs with FedAnil-PoS consensus to select the winning miner.
 
