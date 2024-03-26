@@ -63,7 +63,7 @@ $ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -
 
 <b>-ha 80,10,10</b>: role assignment hard-assigned to 80 workers, 10 validators, and 10 miners for each communication round. A <b>*</b> in <b>-ha</b> means the corresponding number of roles is not limited. e.g., <b>-ha \*,10,\*</b> means at least 5 validators would be assigned in each communication round, and the rest of the enterprises are dynamically and randomly assigned to any role. <b>-ha \*,\*,\*</b> means the role-assigning in each communication round is completely dynamic and random.
 
-<b>-aio 1</b>: <i>aio</i> means "all in one network", namely, every enterprise in the emulation has every other enterprise in its peer list. This is to simulate that FedAnil runs on a Permissioned blockchain (consortium blockchain). If using <b>-aio 0</b>, the emulation will let an enterprise (registrant) randomly register with another enterprise (register) and copy the register's peer list.
+<b>-aio 1</b>: <i>aio</i> means "all in one network", namely, every enterprise in the simulation has every other enterprise in its peer list. This is to simulate that FedAnil runs on a Permissioned blockchain (consortium blockchain). If using <b>-aio 0</b>, the simulation will let an enterprise (registrant) randomly register with another enterprise (register) and copy the register's peer list.
 
 <b>-pow 0</b>: the argument of <b>-pow</b> specifies the proof-of-work difficulty. When using 0, FedAnil runs with FedAnil-PoS consensus to select the winning miner.
 
@@ -73,7 +73,7 @@ $ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -
 
 <b>-vh 0.08</b>: validator-threshold is set to 0.08 for all communication rounds. This value may be adaptively learned by validators in a future version.
 
-<b>-cs 0</b>: as the emulation does not include mechanisms to disturb the digital signature of the transactions, this argument turns off signature checking to speed up the execution.
+<b>-cs 0</b>: as the simulation does not include mechanisms to disturb the digital signature of the transactions, this argument turns off signature checking to speed up the execution.
 
 Federated Learning arguments (inherited from https://github.com/WHDY/FedAvg)
 
@@ -91,10 +91,10 @@ Other arguments
 
 Please see <i>main.py</i> for other argument options.
 
-## Emulation Logs
+## simulation Logs
 #### Examining the Logs
 
-While running, the program saves the emulation logs inside of the <i>log/\<execution_time\></i> folder. The logs are saved based on communication rounds. In the corresponding round folder, you may find the model accuracy evaluated by each enterprise using the global model at the end of each communication round. You may also find each worker's local training accuracy, the validation-accuracy-difference value of each validator, and the final stake rewarded to each enterprise in this communication round. Outside of the round folders, you may also find the malicious enterprises identification log.
+While running, the program saves the simulation logs inside of the <i>log/\<execution_time\></i> folder. The logs are saved based on communication rounds. In the corresponding round folder, you may find the model accuracy evaluated by each enterprise using the global model at the end of each communication round. You may also find each worker's local training accuracy, the validation-accuracy-difference value of each validator, and the final stake rewarded to each enterprise in this communication round. Outside of the round folders, you may also find the malicious enterprises identification log.
 
 #### Plotting Experimental Results
 
