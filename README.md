@@ -13,9 +13,10 @@ MacBook Pro Apple M1 Pro Chip
 Python 3.10
 PyTorch 2.2.1
 ```
-(2) Clone the repo
+(2) Download the repo
 ```
 $ git clone https://github.com/rezafotohi/FedAnil.git
+$ cd FedAnil
 ```
 (3) Create a new conda environment with Python 3.10
 ```
