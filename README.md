@@ -118,7 +118,7 @@ If you publish work that uses FedAnil, please cite FedAnil as follows:
 ```bibtex
 @article{2024fedanil,
   title={Decentralized and Robust Privacy-Preserving Model Using Blockchain-Enabled Federated Deep Learning in Intelligent Enterprises},
-  author={Fotohi, R. and Aliee, F. S., and Farahani, B.},
+  author={Fotohi, Reza, Fereidoon Shams Aliee, and Bahar Farahani},
   journal={Applied Soft Computing Journal},
   year={2024}
 }
