@@ -88,7 +88,7 @@ Federated Learning arguments (inherited from https://github.com/WHDY/FedAvg)
 
 Other arguments
 
-<b>-dtx 1</b>: see <b>Known Issue</b>.
+<b>-dtx 1</b>: see <b>Issues</b>.
 
 Please see <i>main.py</i> for other argument options.
 
@@ -96,10 +96,13 @@ Please see <i>main.py</i> for other argument options.
 #### Examining the Logs
 <p align="justify"> While running, the program saves the simulation logs inside of the <i>log/\<execution_time\></i> folder. The logs are saved based on communication rounds. In the corresponding round folder, you may find the model accuracy evaluated by each enterprise using the global model at the end of each communication round. You may also find each worker's local training accuracy, the validation-accuracy-difference value of each validator, and the final stake rewarded to each enterprise in this communication round. Outside of the round folders, you may also find the malicious enterprises identification log. </p>
 
-## Known Issue
+## Issues
 <p align="justify"> If you use a GPU with a RAM of less than 16GB, you may encounter the issue of <b>CUDA out of memory</b>. The reason causing this issue may be that the local model updates (i.e., neural network models) stored inside the blocks occupy the CUDA memory and cannot be automatically released because the memory taken in CUDA increases as the communication round progresses. A few solutions have been tried without luck. </p>
 
 <p align="justify"> A temporary solution is to specify <b>-dtx 1</b>. This argument lets the program delete the transactions stored inside of the last block to release the CUDA memory as much as possible. However, specifying <b>-dtx 1</b> will also turn off the chain-resyncing functionality as the resyncing process requires enterprises to reperform global model updates based on the transactions stored inside of the resynced chain, which has empty transactions in each block. As a result, using GPU should only emulate the situation that FedAnil runs in its most ideal situation, that is, every available transaction would be recorded inside of the block of each round, as specified by the default arguments. </p>
+
+Use [GitHub issues](https://github.com/tensorflow/federated/issues) for tracking
+requests and bugs.
 
 ## Contact Email & Question
 Please raise other issues and concerns you found. Thank you!
