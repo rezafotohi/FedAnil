@@ -144,3 +144,6 @@ class ClientsGroup(object):
 
 			someone = client(client_idx, is_malicious, self.noise_variance, TensorDataset(torch.tensor(local_train_data), torch.tensor(local_train_label)), test_data_loader, self.learning_rate, self.net, self.dev)
 			self.clients_set[client_idx] = someone
+
+
+
