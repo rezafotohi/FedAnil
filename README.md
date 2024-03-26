@@ -99,6 +99,6 @@ Please raise other issues and concerns you found. Thank you!
 ## Acknowledgments
 (1) The code of the Blockchain Architecture used in FedAnil is inspired  [*Fully functional blockchain application implemented in Python from scratch*](https://github.com/satwikkansal/python_blockchain_app) by Satwik Kansal.
 
-(2) The code of [*Validation and Consensus scheme*](https://github.com/hanglearning/VBFL) used in FedAnil is inspired by VBFL.
+(2) The code of the Validation and Consensus scheme used in FedAnil is inspired [*VBFL*](https://github.com/hanglearning/VBFL) by Hang Chen.
 
-(3) The code of FedAvg used in FedAnil is inspired by [*WHDY's FedAvg implementation*](https://github.com/WHDY/FedAvg).
+(3) The code of the FedAvg used in FedAnil is inspired [*WHDY's FedAvg implementation*](https://github.com/WHDY/FedAvg) by WHDY.
