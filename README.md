@@ -58,7 +58,7 @@ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -vh
 
 ## Explanations of arguments:
 
-<b>-nd 20</b>: 20 Enterprises.
+<b>-nd 100</b>: 100 Enterprises.
 
 <b>-max_ncomm 50</b>: maximum 50 communication rounds.
 
