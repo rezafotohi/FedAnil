@@ -20,40 +20,40 @@ cd FedAnil
 ```
 (3) Create a new conda environment with Python 3.10
 ```
-$ conda create -n FedAnil python=3.10
-$ conda activate FedAnil
+conda create -n FedAnil python=3.10
+conda activate FedAnil
 ```
 (4) Install PyTorch and Jupyter
 ```
-$ conda install pytorch torchvision torchaudio -c pytorch
-$ conda install -c conda-forge jupyter jupyterlab
+conda install pytorch torchvision torchaudio -c pytorch
+conda install -c conda-forge jupyter jupyterlab
 ```
 (5) Is the torch installed successfully or not? Enter the following commands in the terminal:
 ```
-$ python3
-$ import torch
+python3
+import torch
 ```
 (6) Install Pycryptodome and Matplotlib
 ```
-$ conda install pycryptodome
-$ conda install matplotlib
+conda install pycryptodome
+conda install matplotlib
 ```
 (7) Install Scikit-Learn
 ```
-$ pip3 install scikit-learn-extra
+pip3 install scikit-learn-extra
 ```
 (8) Install Bitarray
 ```
-$ pip3 install bitarray
+pip3 install bitarray
 ```
 (9) Install TenSEAL
 ```
-$ pip install git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
+pip install git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
 ```
 
 (10) Run FedAnil Simulation
 ```
-$ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -vh 0.08 -cs 0 -B 64 -mn OARF -iid 0 -lr 0.01 -dtx 1 -le 20
+python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -vh 0.08 -cs 0 -B 64 -mn OARF -iid 0 -lr 0.01 -dtx 1 -le 20
 ```
 
 ## Explanations of arguments:
