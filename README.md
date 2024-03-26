@@ -16,20 +16,22 @@ $ git clone https://github.com/rezafotohi/FedAnil.git
 ```
 (2) Create a new conda environment with Python 3.10
 ```
-$ conda create -n FedAnil python=3.7.6
+$ conda create -n FedAnil python=3.10
 $ conda activate FedAnil
 ```
-(3) Head to https://pytorch.org/ for instructions to install PyTorch
+(3) Install PyTorch
 ```
-$ # If using CUDA, first check its version
-$ nvidia-smi
-$ # Install the correct CUDA version for PyTorch. 
-$ # The code was tested on CUDA 10.1 and PyTorch 1.4.0
-$ conda install pytorch=1.4.0 torchvision torchaudio cudatoolkit=10.1 -c pytorch
+$ conda install pytorch torchvision torchaudio -c pytorch
+$ conda install -c conda-forge jupyter jupyterlab
+
+(4) Is torch installed successfully or not?
 ```
-(4) Install pycryptodome 3.9.9 and matplotlib
+$ python3
+$ import torch
+
+(5) Install Pycryptodome and Matplotlib
 ```
-$ conda install pycryptodome=3.9.9
+$ conda install pycryptodome
 $ conda install matplotlib
 ```
 #### Run FedAnil Simulation
