@@ -111,6 +111,19 @@ Email: Fotohi.Reza_AT_gmail.com
 
 Linkedin: https://www.linkedin.com/in/reza-fotohi-b433a169/
 
+## Citation
+
+If you publish work that uses FedAnil, please cite FedAnil as follows:
+
+```bibtex
+@article{2024fedanil,
+  title={Decentralized and Robust Privacy-Preserving Model Using Blockchain-Enabled Federated Deep Learning in Intelligent Enterprises},
+  author={Fotohi, R. and Aliee, F. S., and Farahani, B.},
+  journal={Applied Soft Computing Journal},
+  year={2024}
+}
+```
+
 ## Acknowledgments
 (1) The code of the Blockchain Architecture used in FedAnil is inspired  [*Fully functional blockchain application implemented in Python from scratch*](https://github.com/satwikkansal/python_blockchain_app) by Satwik Kansal.
 
