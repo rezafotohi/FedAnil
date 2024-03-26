@@ -1,1 +1,42 @@
+Command line arguments used -
+-nd 28 -max_ncomm 10 -ha 20,5,3 -aio 1 -pow 0 -ko 5 -nm 4 -vh 0.08 -cs 0 -B 64 -mn OARF -iid 0 -lr 0.01 -dtx 1 -le 20
 
+All arguments used -
+
+--gpu 0
+--verbose 1
+--save_network_snapshots 0
+--destroy_tx_in_block 1
+--resume_path None
+--save_freq 5
+--save_most_recent 2
+--batchsize 64
+--model_name OARF
+--learning_rate 0.01
+--optimizer SGD
+--IID 0
+--max_num_comm 10
+--num_enterprises 28
+--shard_test_data 0
+--num_malicious 4
+--noise_variance 1
+--default_local_epochs 20
+--unit_reward 1
+--knock_out_rounds 5
+--lazy_local_enterprise_knock_out_rounds 10
+--pow_difficulty 0
+--miner_acception_wait_time 0.0
+--miner_accepted_transactions_size_limit 0.0
+--miner_pos_propagated_block_wait_time inf
+--validator_threshold 0.08
+--malicious_updates_discount 0.0
+--malicious_validator_on 0
+--network_stability 1.0
+--even_link_speed_strength 1
+--base_data_transmission_speed 70000.0
+--even_computation_power 1
+--hard_assign 20,5,3
+--all_in_one 1
+--check_signature 0
+--attack_type 
+--target_acc 0.9
