@@ -50,9 +50,7 @@ $ pip3 install bitarray
 $ pip install git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
 ```
 
-#### Run FedAnil Simulation
-
-Sample running command 
+(10) Run FedAnil Simulation
 ```
 $ python3 main.py -nd 100 -max_ncomm 10 -ha 80,10,10 -aio 1 -pow 0 -ko 6 -nm 3 -vh 0.08 -cs 0 -B 64 -mn OARF -iid 0 -lr 0.01 -dtx 1 -le 20
 ```
