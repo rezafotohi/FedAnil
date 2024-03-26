@@ -23,12 +23,12 @@ $ conda activate FedAnil
 ```
 $ conda install pytorch torchvision torchaudio -c pytorch
 $ conda install -c conda-forge jupyter jupyterlab
-
+```
 (4) Is torch installed successfully or not?
 ```
 $ python3
 $ import torch
-
+```
 (5) Install Pycryptodome and Matplotlib
 ```
 $ conda install pycryptodome
