@@ -57,9 +57,9 @@ $ python3 main.py -nd 100 -max_ncomm 10 -ha 80,10,10 -aio 1 -pow 0 -ko 6 -nm 3 -
 
 ## FedAnil arguments
 
-(1) <b>-nd 20</b>: 20 devices.
+<b>-nd 20</b>: 20 devices.
 
-(2) <b>-max_ncomm 100</b>: maximum 100 communication rounds.
+<b>-max_ncomm 100</b>: maximum 100 communication rounds.
 
 (3) <b>-ha 12,5,3</b>: role assignment hard-assigned to 12 workers, 5 validators and 3 miners for each communication round. A <b>*</b> in <b>-ha</b> means the corresponding number of roles are not limited. e.g., <b>-ha \*,5,\*</b> means at least 5 validators would be assigned in each communication round, and the rest of the devices are dynamically and randomly assigned to any role. <b>-ha \*,\*,\*</b> means the role-assigning in each communication round is completely dynamic and random.
 
