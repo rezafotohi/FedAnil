@@ -13,39 +13,39 @@ For detailed explanations, please refer to the [*Decentralized and Robust Privac
 Python 3.10
 PyTorch 2.2.1
 ```
-(1) Clone the repo
+(2) Clone the repo
 ```
 $ git clone https://github.com/rezafotohi/FedAnil.git
 ```
-(2) Create a new conda environment with Python 3.10
+(3) Create a new conda environment with Python 3.10
 ```
 $ conda create -n FedAnil python=3.10
 $ conda activate FedAnil
 ```
-(3) Install PyTorch
+(4) Install PyTorch
 ```
 $ conda install pytorch torchvision torchaudio -c pytorch
 $ conda install -c conda-forge jupyter jupyterlab
 ```
-(4) Is torch installed successfully or not? Enter the following commands in the terminal:
+(5) Is torch installed successfully or not? Enter the following commands in the terminal:
 ```
 $ python3
 $ import torch
 ```
-(5) Install Pycryptodome and Matplotlib
+(6) Install Pycryptodome and Matplotlib
 ```
 $ conda install pycryptodome
 $ conda install matplotlib
 ```
-(6) Install Scikit-Learn
+(7) Install Scikit-Learn
 ```
 $ pip3 install scikit-learn-extra
 ```
-(7) Install Bitarray
+(8) Install Bitarray
 ```
 $ pip3 install bitarray
 ```
-(8) Install TenSEAL
+(9) Install TenSEAL
 ```
 $ pip install git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
 ```
