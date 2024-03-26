@@ -97,7 +97,7 @@ The experimental results shown in the paper were obtained from Google Colab Pro 
 Please raise other issues and concerns you found. Thank you!
 
 ## Acknowledgments
-(1) The code of the [*Fully functional blockchain application implemented in Python from scratch*] is inspired by Satwik's (https://github.com/satwikkansal/python_blockchain_app).
+(1) The code of the [*Fully functional blockchain application implemented in Python from scratch*](https://github.com/satwikkansal/python_blockchain_app) is inspired by Satwik's.
 
 (2) The code of Validation and Consensus scheme used in FedAnil is inspired by [*VBFL implementation*](https://github.com/hanglearning/VBFL).
 
