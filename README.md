@@ -70,9 +70,9 @@ $ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -
 
 <b>-nm 3</b>: exactly 3 enterprises will be malicious nodes.
 
-<b>-vh 0.08</b>: validator-threshold is set to 0.08 for all communication rounds. This value may be adaptively learned by validators in a future version.
+<p align="justify"> <b>-vh 0.08</b>: validator-threshold is set to 0.08 for all communication rounds. This value may be adaptively learned by validators in a future version. </p>
 
-<b>-cs 0</b>: as the simulation does not include mechanisms to disturb the digital signature of the transactions, this argument turns off signature checking to speed up the execution.
+<p align="justify"> <b>-cs 0</b>: as the simulation does not include mechanisms to disturb the digital signature of the transactions, this argument turns off signature checking to speed up the execution. </p>
 
 Federated Learning arguments (inherited from https://github.com/WHDY/FedAvg)
 
