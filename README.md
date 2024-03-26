@@ -97,7 +97,7 @@ The experimental results shown in the paper were obtained from Google Colab Pro 
 Please raise other issues and concerns you found. Thank you!
 
 ## Acknowledgments
+(1) The code of the fully functional blockchain application implemented in Python from scratch is inspired by Satwik's [*python_blockchain_app*](https://github.com/satwikkansal/python_blockchain_app).
 
-(1)The code of the blockchain architecture and PoW consensus is inspired by Satwik's [*python_blockchain_app*](https://github.com/satwikkansal/python_blockchain_app). 
 
 (2)The code of FedAvg used in FedAnil is inspired by [*WHDY's FedAvg implementation*](https://github.com/WHDY/FedAvg).
