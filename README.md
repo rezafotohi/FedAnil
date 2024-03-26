@@ -107,7 +107,7 @@ requests and bugs.
 ## Contact Email & Question
 Please raise other issues and concerns you found. Thank you!
 
-Email: Fotohi.Reza_AT_gmail.com
+Email: Fotohi.reza@gmail.com
 
 Linkedin: https://www.linkedin.com/in/reza-fotohi-b433a169/
 
