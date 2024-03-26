@@ -52,42 +52,42 @@ $ pip install git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
 
 (10) Run FedAnil Simulation
 ```
-$ python3 main.py -nd 100 -max_ncomm 10 -ha 80,10,10 -aio 1 -pow 0 -ko 6 -nm 3 -vh 0.08 -cs 0 -B 64 -mn OARF -iid 0 -lr 0.01 -dtx 1 -le 20
+$ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 6 -nm 3 -vh 0.08 -cs 0 -B 64 -mn OARF -iid 0 -lr 0.01 -dtx 1 -le 20
 ```
 
 ## FedAnil arguments
 
-<b>-nd 20</b>: 20 devices.
+<b>-nd 20</b>: 20 Enterprises.
 
-<b>-max_ncomm 100</b>: maximum 100 communication rounds.
+<b>-max_ncomm 100</b>: maximum 50 communication rounds.
 
-(3) <b>-ha 12,5,3</b>: role assignment hard-assigned to 12 workers, 5 validators and 3 miners for each communication round. A <b>*</b> in <b>-ha</b> means the corresponding number of roles are not limited. e.g., <b>-ha \*,5,\*</b> means at least 5 validators would be assigned in each communication round, and the rest of the devices are dynamically and randomly assigned to any role. <b>-ha \*,\*,\*</b> means the role-assigning in each communication round is completely dynamic and random.
+<b>-ha 80,10,10</b>: role assignment hard-assigned to 80 workers, 10 validators and 10 miners for each communication round. A <b>*</b> in <b>-ha</b> means the corresponding number of roles are not limited. e.g., <b>-ha \*,5,\*</b> means at least 5 validators would be assigned in each communication round, and the rest of the devices are dynamically and randomly assigned to any role. <b>-ha \*,\*,\*</b> means the role-assigning in each communication round is completely dynamic and random.
 
-(4) <b>-aio 1</b>: <i>aio</i> means "all in one network", namely, every device in the emulation has every other device in its peer list. This is to simulate that FedAnil runs on a permissioned blockchain. If using <b>-aio 0</b>, the emulation will let a device (registrant) randomly register with another device (register) and copy the register's peer list.
+<b>-aio 1</b>: <i>aio</i> means "all in one network", namely, every device in the emulation has every other device in its peer list. This is to simulate that FedAnil runs on a permissioned blockchain. If using <b>-aio 0</b>, the emulation will let a device (registrant) randomly register with another device (register) and copy the register's peer list.
 
-(5) <b>-pow 0</b>: the argument of <b>-pow</b> specifies the proof-of-work difficulty. When using 0, FedAnil runs with FedAnil-PoS consensus to select the winning miner.
+<b>-pow 0</b>: the argument of <b>-pow</b> specifies the proof-of-work difficulty. When using 0, FedAnil runs with FedAnil-PoS consensus to select the winning miner.
 
-(6) <b>-ko 6</b>: this argument means a device is blacklisted after it is identified as malicious after 6 consecutive rounds as a worker.
+<b>-ko 6</b>: this argument means a device is blacklisted after it is identified as malicious after 6 consecutive rounds as a worker.
 
-(7) <b>-nm 3</b>: exactly 3 devices will be malicious nodes.
+<b>-nm 3</b>: exactly 3 devices will be malicious nodes.
 
-(8) <b>-vh 0.08</b>: validator-threshold is set to 0.08 for all communication rounds. This value may be adaptively learned by validators in a future version.
+<b>-vh 0.08</b>: validator-threshold is set to 0.08 for all communication rounds. This value may be adaptively learned by validators in a future version.
 
-(9) <b>-cs 0</b>: as the emulation does not include mechanisms to disturb digital signature of the transactions, this argument turns off signature checking to speed up the execution.
+<b>-cs 0</b>: as the emulation does not include mechanisms to disturb digital signature of the transactions, this argument turns off signature checking to speed up the execution.
 
 Federated Learning arguments (inherited from https://github.com/WHDY/FedAvg)
 
-(10) <b>-B 10</b>: batch size set to 10.
+<b>-B 10</b>: batch size set to 10.
 
-(11) <b>-mn mnist_cnn</b>: use mnist_cnn model. Another choice is mnist_2nn, or you may put your own network inside of <i>Models.py</i> and specify it.
+<b>-mn mnist_cnn</b>: use mnist_cnn model. Another choice is mnist_2nn, or you may put your own network inside of <i>Models.py</i> and specify it.
 
-(12) <b>-iid 0</b>: shard the training data set in Non-IID way.
+<b>-iid 0</b>: shard the training data set in Non-IID way.
 
-(13) <b>-lr 0.01</b>: learning rate set to 0.01.
+<b>-lr 0.01</b>: learning rate set to 0.01.
 
 Other arguments
 
-(14) <b>-dtx 1</b>: see <b>Known Issue</b>.
+<b>-dtx 1</b>: see <b>Known Issue</b>.
 
 Please see <i>main.py</i> for other argument options.
 
