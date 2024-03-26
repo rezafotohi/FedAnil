@@ -8,7 +8,7 @@ For detailed explanations, please refer to the [*Decentralized and Robust Privac
 
 
 ## Instructions to Run
-#### <ins>Suggested</ins> Environments Setup
+(1) Suggested Environments Setup
 ```
 Python 3.10
 PyTorch 2.2.1
