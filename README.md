@@ -9,7 +9,7 @@ For detailed explanations, please refer to the [*Decentralized and Robust Privac
 ## Instructions to Run
 (1) Requirements
 ```
-Apple M1 Pro
+MacBook Pro Apple M1 Pro Chip
 Python 3.10
 PyTorch 2.2.1
 ```
