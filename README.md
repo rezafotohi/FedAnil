@@ -7,7 +7,7 @@
 For detailed explanations, please refer to the [*Decentralized and Robust Privacy-Preserving Model Using Blockchain-Enabled Federated Deep Learning in Intelligent Enterprises*](https://ieeexplore.ieee.org/abstract/document/10128790).
 
 ## FedAnil Installation
-(1) Requirements
+(1) Requirements: Software
 ```
 MacBook Pro Apple M1 Pro Chip
 Python 3.10
@@ -101,7 +101,9 @@ Please see <i>main.py</i> for other argument options.
 
 <p align="justify"> A temporary solution is to specify <b>-dtx 1</b>. This argument lets the program delete the transactions stored inside of the last block to release the CUDA memory as much as possible. However, specifying <b>-dtx 1</b> will also turn off the chain-resyncing functionality as the resyncing process requires enterprises to reperform global model updates based on the transactions stored inside of the resynced chain, which has empty transactions in each block. As a result, using GPU should only emulate the situation that FedAnil runs in its most ideal situation, that is, every available transaction would be recorded inside of the block of each round, as specified by the default arguments. </p>
 
+## Contact emails
 Please raise other issues and concerns you found. Thank you!
+Reza Fotohi: Fotohi.Reza_AT_gmail.com
 
 ## Acknowledgments
 (1) The code of the Blockchain Architecture used in FedAnil is inspired  [*Fully functional blockchain application implemented in Python from scratch*](https://github.com/satwikkansal/python_blockchain_app) by Satwik Kansal.
