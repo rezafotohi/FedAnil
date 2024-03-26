@@ -60,35 +60,35 @@ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -vh
 
 <b>-nd 100</b>: 100 Enterprises.
 
-<b>-max_ncomm 50</b>: maximum 50 communication rounds.
+<b>-max_ncomm 50</b>: Maximum 50 communication rounds.
 
-<p align="justify"> <b>-ha 80,10,10</b>: role assignment hard-assigned to 80 workers, 10 validators, and 10 miners for each communication round. A <b>*</b> in <b>-ha</b> means the corresponding number of roles is not limited. e.g., <b>-ha *,10,*</b> means at least 5 validators would be assigned in each communication round, and the rest of the enterprises are dynamically and randomly assigned to any role. <b>-ha *,*,*</b> means the role-assigning in each communication round is completely dynamic and random. </p>
+<p align="justify"> <b>-ha 80,10,10</b>: Role assignment hard-assigned to 80 workers, 10 validators, and 10 miners for each communication round. A <b>*</b> in <b>-ha</b> means the corresponding number of roles is not limited. e.g., <b>-ha *,10,*</b> means at least 5 validators would be assigned in each communication round, and the rest of the enterprises are dynamically and randomly assigned to any role. <b>-ha *,*,*</b> means the role-assigning in each communication round is completely dynamic and random. </p>
 
 <p align="justify"> <b>-aio 1</b>: <i>aio</i> means "all in one network", namely, every enterprise in the simulation has every other enterprise in its peer list. This is to simulate that FedAnil runs on a Permissioned blockchain (consortium blockchain). If using <b>-aio 0</b>, the simulation will let an enterprise (registrant) randomly register with another enterprise (register) and copy the register's peer list. </p>
 
-<p align="justify"> <b>-pow 0</b>: the argument of <b>-pow</b> specifies the proof-of-work difficulty. When using 0, FedAnil runs with FedAnil-PoS consensus to select the winning miner. </p>
+<p align="justify"> <b>-pow 0</b>: The argument of <b>-pow</b> specifies the proof-of-work difficulty. When using 0, FedAnil runs with FedAnil-PoS consensus to select the winning miner. </p>
 
-<b>-ko 5</b>: this argument means an enterprise is blacklisted after it is identified as malicious after 6 consecutive rounds as a worker.
+<b>-ko 5</b>: This argument means an enterprise is blacklisted after it is identified as malicious after 6 consecutive rounds as a worker.
 
-<b>-nm 3</b>: exactly 3 enterprises will be malicious nodes.
+<b>-nm 3</b>: Exactly 3 enterprises will be malicious nodes.
 
-<p align="justify"> <b>-vh 0.08</b>: validator-threshold is set to 0.08 for all communication rounds. This value may be adaptively learned by validators in a future version. </p>
+<p align="justify"> <b>-vh 0.08</b>: Validator-threshold is set to 0.08 for all communication rounds. This value may be adaptively learned by validators in a future version. </p>
 
-<p align="justify"> <b>-cs 0</b>: as the simulation does not include mechanisms to disturb the digital signature of the transactions, this argument turns off signature checking to speed up the execution. </p>
+<p align="justify"> <b>-cs 0</b>: As the simulation does not include mechanisms to disturb the digital signature of the transactions, this argument turns off signature checking to speed up the execution. </p>
 
 Federated Learning arguments (inherited from https://github.com/WHDY/FedAvg)
 
-<b>-B 64</b>: batch size set to 64.
+<b>-B 64</b>: Batch size set to 64.
 
-<b>-mn OARF</b>: use OARF Dataset.
+<b>-mn OARF</b>: Use OARF Dataset.
 
-<b>-iid 0</b>: shard the training data set in Non-IID way.
+<b>-iid 0</b>: Shard the training data set in Non-IID way.
 
-<b>-lr 0.01</b>: learning rate set to 0.01.
+<b>-lr 0.01</b>: Learning rate set to 0.01.
 
 Other arguments
 
-<b>-dtx 1</b>: see <b>Issues</b>.
+<b>-dtx 1</b>: See <b>Issues</b>.
 
 Please see <i>main.py</i> for other argument options.
 
