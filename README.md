@@ -77,7 +77,7 @@ $ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -
 
 Federated Learning arguments (inherited from https://github.com/WHDY/FedAvg)
 
-<b>-B 10</b>: batch size set to 10.
+<b>-B 64</b>: batch size set to 64.
 
 <b>-mn mnist_cnn</b>: use mnist_cnn model. Another choice is mnist_2nn, or you may put your network inside of <i>Models.py</i> and specify it.
 
