@@ -104,7 +104,10 @@ Please see <i>main.py</i> for other argument options.
 ## Contact emails
 Please raise other issues and concerns you found. Thank you!
 
-Reza Fotohi: Fotohi.Reza_AT_gmail.com
+Email: Fotohi.Reza_AT_gmail.com
+
+Linkedin:
+https://www.linkedin.com/in/reza-fotohi-b433a169/
 
 ## Acknowledgments
 (1) The code of the Blockchain Architecture used in FedAnil is inspired  [*Fully functional blockchain application implemented in Python from scratch*](https://github.com/satwikkansal/python_blockchain_app) by Satwik Kansal.
