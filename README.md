@@ -48,7 +48,7 @@ pip3 install bitarray
 ```
 (9) Install TenSEAL
 ```
-pip install git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
+pip3 install git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
 ```
 
 (10) Run FedAnil Simulation
