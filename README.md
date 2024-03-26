@@ -7,8 +7,9 @@
 For detailed explanations, please refer to the [*Decentralized and Robust Privacy-Preserving Model Using Blockchain-Enabled Federated Deep Learning in Intelligent Enterprises*](https://ieeexplore.ieee.org/abstract/document/10128790).
 
 ## Instructions to Run
-(1) Suggested Environments Setup
+(1) Requirements
 ```
+Apple M1 Pro
 Python 3.10
 PyTorch 2.2.1
 ```
