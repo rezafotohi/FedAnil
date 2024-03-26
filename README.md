@@ -101,12 +101,15 @@ Please see <i>main.py</i> for other argument options.
 
 <p align="justify"> A temporary solution is to specify <b>-dtx 1</b>. This argument lets the program delete the transactions stored inside of the last block to release the CUDA memory as much as possible. However, specifying <b>-dtx 1</b> will also turn off the chain-resyncing functionality as the resyncing process requires enterprises to reperform global model updates based on the transactions stored inside of the resynced chain, which has empty transactions in each block. As a result, using GPU should only emulate the situation that FedAnil runs in its most ideal situation, that is, every available transaction would be recorded inside of the block of each round, as specified by the default arguments. </p>
 
-## Contact emails
+## Question
 Please raise other issues and concerns you found. Thank you!
 
-Email: Fotohi.Reza_AT_gmail.com
+Email: 
+
+Fotohi.Reza_AT_gmail.com
 
 Linkedin:
+
 https://www.linkedin.com/in/reza-fotohi-b433a169/
 
 ## Acknowledgments
