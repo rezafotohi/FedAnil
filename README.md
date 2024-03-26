@@ -24,7 +24,7 @@ $ conda activate FedAnil
 $ conda install pytorch torchvision torchaudio -c pytorch
 $ conda install -c conda-forge jupyter jupyterlab
 ```
-(4) Is torch installed successfully or not?
+(4) Is torch installed successfully or not? Enter the following commands in the terminal:
 ```
 $ python3
 $ import torch
@@ -34,6 +34,23 @@ $ import torch
 $ conda install pycryptodome
 $ conda install matplotlib
 ```
+(6) Install Scikit-Learn
+```
+$ pip3 install scikit-learn-extra
+```
+(7) Install Bitarray
+```
+$ pip3 install bitarray
+```
+(8) Install TenSEAL
+```
+$ pip install git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
+```
+
+
+
+
+
 #### Run FedAnil Simulation
 
 Sample running command 
