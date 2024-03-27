@@ -145,6 +145,10 @@ If you publish work that uses FedAnil, please cite FedAnil as follows:
 }
 ```
 
+## Disclaimer
+
+This framework is a research product and is provided as it is. We assume no liability for any user action or omission.
+
 ## Acknowledgments
 (1) The code of the Blockchain Architecture used in FedAnil is inspired  [*Fully functional blockchain application implemented in Python from scratch*](https://github.com/satwikkansal/python_blockchain_app) by Satwik Kansal.
 
