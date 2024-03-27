@@ -125,13 +125,6 @@ Please see <i>main.py</i> for other argument options.
 Use [GitHub issues](https://github.com/tensorflow/federated/issues) for tracking
 requests and bugs.
 
-## Contact
-Please raise other issues and concerns you found. Thank you!
-
-Email: Fotohi.reza@gmail.com
-
-Linkedin: https://www.linkedin.com/in/reza-fotohi-b433a169/
-
 ## Citation
 
 If you publish work that uses FedAnil, please cite FedAnil as follows:
@@ -148,6 +141,13 @@ If you publish work that uses FedAnil, please cite FedAnil as follows:
 ## Disclaimer
 
 This model is a research work and is provided as it is. We are not responsible for any user action or omission.
+
+## Contact
+Please raise other issues and concerns you found. Thank you!
+
+Email: Fotohi.reza@gmail.com
+
+Linkedin: https://www.linkedin.com/in/reza-fotohi-b433a169/
 
 ## Acknowledgments
 (1) The code of the Blockchain Architecture used in FedAnil is inspired  [*Fully functional blockchain application implemented in Python from scratch*](https://github.com/satwikkansal/python_blockchain_app) by Satwik Kansal.
