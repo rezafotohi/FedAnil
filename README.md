@@ -32,7 +32,7 @@ PyTorch 2.2.1
 
 | `2.1.1` | `2.1.2` | `2.2.0` | `2.2.1` |
 | ------|-------|-------|-------|
-| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
+| :x: | :x: | :x: | :heavy_check_mark: |
 
 #### Step 2: Download the repo
 ```
