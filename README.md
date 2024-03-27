@@ -13,6 +13,15 @@ MacBook Pro Apple M1 Pro Chip
 Python 3.10
 PyTorch 2.2.1
 ```
+
+## Requirements
+
+### OS
+
+| Windows | Linux | MacOS |
+|:--:|:--:|:--:|
+| :x: | :heavy_check_mark: | :heavy_check_mark: |
+
 #### Step 2: Download the repo
 ```
 git clone https://github.com/rezafotohi/FedAnil.git
