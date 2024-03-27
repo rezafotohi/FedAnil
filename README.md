@@ -7,7 +7,7 @@
 For detailed explanations, please refer to the [*Decentralized and Robust Privacy-Preserving Model Using Blockchain-Enabled Federated Deep Learning in Intelligent Enterprises*](https://ieeexplore.ieee.org/abstract/document/10128790).
 
 ## FedAnil Installation
-Step 1: Requirments
+# Step 1: Requirments
 ```
 MacBook Pro Apple M1 Pro Chip
 Python 3.10
