@@ -22,6 +22,12 @@ PyTorch 2.2.1
 |:--:|:--:|:--:|
 | :x: | :heavy_check_mark: | :heavy_check_mark: |
 
+### Python
+
+| `3.6` | `3.7` | `3.8` | `3.9` |
+| ------|-------|-------|-------|
+| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
+
 #### Step 2: Download the repo
 ```
 git clone https://github.com/rezafotohi/FedAnil.git
