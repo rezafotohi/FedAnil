@@ -125,7 +125,7 @@ Please see <i>main.py</i> for other argument options.
 Use [GitHub issues](https://github.com/tensorflow/federated/issues) for tracking
 requests and bugs.
 
-## Contact Email & Question
+## Contact
 Please raise other issues and concerns you found. Thank you!
 
 Email: Fotohi.reza@gmail.com
