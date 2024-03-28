@@ -20,8 +20,8 @@ For detailed explanations, please refer to the [*Decentralized and Robust Privac
 | Service     |                        Supported                        |
 | ----------- | :-----------------------------------------------------: |
 | Sonarr (v3) | <icon icon="fa6-solid:xmark" height="24" color="red" /> |
-| Sonarr (v4) |             ![Yes](/icon/checkmark-16.png)              |
-| Radarr      |             ![Yes](/icon/checkmark-16.png)              |
+| Sonarr (v4) |             ![Yes](heavy_check_mark)              |
+| Radarr      |             ![Yes](heavy_check_mark)              |
 
 
 | `3.9` | `3.10` | `3.11` | `3.12` |
