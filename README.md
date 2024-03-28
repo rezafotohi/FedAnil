@@ -24,7 +24,7 @@ For detailed explanations, please refer to the [*Decentralized and Robust Privac
 ### PyTorch
 
 | `2.1.1` | `2.1.2` | `2.2.0` | `2.2.1` |
-| ------|-------|-------|-------|
+| :------:|:-------:|:-------:|:-------:|
 | :x: | :x: | :x: | :heavy_check_mark: |
 
 #### Step 1: Download the repo
