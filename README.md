@@ -17,7 +17,14 @@ For detailed explanations, please refer to the [*Decentralized and Robust Privac
 
 ### Python
 
-| 3.9 | 3.10 | 3.11 | 3.12 |
+| Service     |                        Supported                        |
+| ----------- | :-----------------------------------------------------: |
+| Sonarr (v3) | <icon icon="fa6-solid:xmark" height="24" color="red" /> |
+| Sonarr (v4) |             ![Yes](/icon/checkmark-16.png)              |
+| Radarr      |             ![Yes](/icon/checkmark-16.png)              |
+
+
+| `3.9` | `3.10` | `3.11` | `3.12` |
 | ------|-------|-------|-------|
 | :x: | :heavy_check_mark: | :x: | :x: |
 
