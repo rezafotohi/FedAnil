@@ -13,7 +13,7 @@ For detailed explanations, please refer to the [*Decentralized and Robust Privac
 
 | Windows | Linux | MacOS |
 |:--:|:--:|:--:|
-| :x: | :heavy_check_mark: | :heavy_check_mark: |
+| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ### Python
 
