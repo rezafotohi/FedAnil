@@ -72,7 +72,12 @@ pip3 install bitarray
 pip3 install git+https://github.com/OpenMined/TenSEAL.git#egg=tenseal
 ```
 
-#### Step 9: Run FedAnil Simulation
+#### Step 9: Install Cmake
+```
+Download the latest CMake Mac binary distribution here: https://cmake.org/download/ (current latest is: https://cmake.org/files/v3.17/cmake-3.17.1-Darwin-x86_64.dmg)
+```
+
+#### Step 10: Run FedAnil Simulation
 ```
 python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -vh 0.08 -cs 0 -B 64 -mn OARF -iid 0 -lr 0.01 -dtx 1 -le 20
 ```
