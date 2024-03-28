@@ -19,7 +19,7 @@ For detailed explanations, please refer to the [*Decentralized and Robust Privac
 
 | `3.9` | `3.10` | `3.11` | `3.12` |
 | :------:|:-------:|:-------:|:-------:|
-| :x: | :green_heavy_checkmark: | :x: | :x: |
+| :x: | :green_heavy_check_mark: | :x: | :x: |
 
 ### PyTorch
 
