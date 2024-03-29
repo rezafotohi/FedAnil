@@ -1,7 +1,7 @@
 # FedAnil: Decentralized and Robust Privacy-Preserving Model Using Blockchain-Enabled Federated Deep Learning in Intelligent Enterprises
 <p align="justify"> FedAnil is a secure Blockchain and Homomorphic encryption-enabled Federated Deep Learning Model to address non-IID data and privacy concerns. This repo hosts a simulation for FedAnil written in Python. </p>
 
-## What is it?
+## Introduction
 <p align="justify"> In the traditional DL-based model, the models are jointly trained without leaving the training data from the enterprise's enterprises, and the privacy of this data is preserved. However, existing DL-based methods are vulnerable to poisoning and inference attacks and violate privacy. Also, enterprises' unbalanced and non-IID data harm the model's accuracy and performance. Therefore, to tackle this issue, we proposed FedAnil, a secure blockchain-enabled Federated Deep Learning Model to improve enterprise models' decentralized and tamper-proof properties that include two main phases. The first phase is presented to address the non-IID data challenge. The second phase is presented to address the privacy-preserving challenge. </p>
 
 For detailed explanations, please refer to the [*Decentralized and Robust Privacy-Preserving Model Using Blockchain-Enabled Federated Deep Learning in Intelligent Enterprises*](https://ieeexplore.ieee.org/abstract/document/10128790).
