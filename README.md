@@ -2,7 +2,7 @@
 <p align="justify"> FedAnil is a secure Blockchain and Homomorphic encryption-enabled Federated Deep Learning Model to address non-IID data and privacy concerns. This repo hosts a simulation for FedAnil written in Python. </p>
 
 ## Introduction
-<p align="justify"> In the traditional DL-based model, the models are jointly trained without leaving the training data from the enterprise's enterprises, and the privacy of this data is preserved. However, existing DL-based methods are vulnerable to poisoning and inference attacks and violate privacy. Also, enterprises' unbalanced and non-IID data harm the model's accuracy and performance. Therefore, to tackle this issue, we proposed FedAnil, a secure blockchain-enabled Federated Deep Learning Model to improve enterprise models' decentralized and tamper-proof properties that include two main phases. The first phase is presented to address the non-IID data challenge. The second phase is presented to address the privacy-preserving challenge. </p>
+<p align="justify"> In the traditional DL-based model, the models are jointly trained without leaving the training data from the enterprise's enterprises, and the privacy of this data is preserved. However, existing DL-based methods are vulnerable to poisoning and inference attacks and violate privacy. Also, enterprises' unbalanced and non-IID data harm the model's accuracy and performance. Therefore, to tackle this issue, we proposed FedAnil, a secure blockchain-enabled Federated Deep Learning Model, to improve enterprise models' decentralized and tamper-proof properties that include two main phases. The first phase is presented to address the non-IID data challenge. The second phase is presented to address the privacy-preserving challenge. </p>
 
 For detailed explanations, please refer to the [*Decentralized and Robust Privacy-Preserving Model Using Blockchain-Enabled Federated Deep Learning in Intelligent Enterprises*](https://ieeexplore.ieee.org/abstract/document/10128790).
 
@@ -95,7 +95,7 @@ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -vh
 
 <p align="justify"> <b>-ha 80,10,10</b>: Role assignment hard-assigned to 80 workers, 10 validators, and 10 miners for each communication round. A <b>*</b> in <b>-ha</b> means the corresponding number of roles is not limited. e.g., <b>-ha *,10,*</b> means at least 5 validators would be assigned in each communication round, and the rest of the enterprises are dynamically and randomly assigned to any role. <b>-ha *,*,*</b> means the role-assigning in each communication round is completely dynamic and random. </p>
 
-<p align="justify"> <b>-aio 1</b>: <i>aio</i> means "all in one network", namely, every enterprise in the simulation has every other enterprise in its peer list. This is to simulate that FedAnil runs on a Permissioned blockchain (consortium blockchain). If using <b>-aio 0</b>, the simulation will let an enterprise (registrant) randomly register with another enterprise (register) and copy the register's peer list. </p>
+<p align="justify"> <b>-aio 1</b>: <i>aio</i> means "all in one network", namely, every enterprise in the simulation has every other enterprise in its peer list. This simulates FedAnil running on a Permissioned blockchain (consortium blockchain). If using <b>-aio 0</b>, the simulation will let an enterprise (registrant) randomly register with another enterprise (register) and copy the register's peer list. </p>
 
 <p align="justify"> <b>-pow 0</b>: The argument of <b>-pow</b> specifies the proof-of-work difficulty. When using 0, FedAnil runs with FedAnil-PoS consensus to select the winning miner. </p>
 
@@ -103,7 +103,7 @@ python3 main.py -nd 100 -max_ncomm 50 -ha 80,10,10 -aio 1 -pow 0 -ko 5 -nm 3 -vh
 
 <b>-nm 3</b>: Exactly 3 enterprises will be malicious nodes.
 
-<p align="justify"> <b>-vh 0.08</b>: Validator-threshold is set to 0.08 for all communication rounds. This value may be adaptively learned by validators in a future version. </p>
+<p align="justify"> <b>-vh 0.08</b>: Validator-threshold is set to 0.08 for all communication rounds. Validators may adaptively learn this value in a future version. </p>
 
 <p align="justify"> <b>-cs 0</b>: As the simulation does not include mechanisms to disturb the digital signature of the transactions, this argument turns off signature checking to speed up the execution. </p>
 
@@ -125,12 +125,12 @@ Please see <i>main.py</i> for other argument options.
 
 ## Simulation Logs
 #### Examining the Logs
-<p align="justify"> While running, the program saves the simulation logs inside of the <i>log/\<execution_time\></i> folder. The logs are saved based on communication rounds. In the corresponding round folder, you may find the model accuracy evaluated by each enterprise using the global model at the end of each communication round. You may also find each worker's local training accuracy, the validation-accuracy-difference value of each validator, and the final stake rewarded to each enterprise in this communication round. Outside of the round folders, you may also find the malicious enterprises identification log. </p>
+<p align="justify"> While running, the program saves the simulation logs inside of the <i>log/\<execution_time\></i> folder. The logs are saved based on communication rounds. In the corresponding round folder, you may find the model accuracy evaluated by each enterprise using the global model at the end of each communication round. You may also find each worker's local training accuracy, the validation-accuracy-difference value of each validator, and the final stake rewarded to each enterprise in this communication round. You may also find the malicious enterprise's identification log outside the round folders. </p>
 
 ## Issues
-<p align="justify"> If you use a GPU with a RAM of less than 16GB, you may encounter the issue of <b>CUDA out of memory</b>. The reason causing this issue may be that the local model updates (i.e., neural network models) stored inside the blocks occupy the CUDA memory and cannot be automatically released because the memory taken in CUDA increases as the communication round progresses. A few solutions have been tried without luck. </p>
+<p align="justify"> If you use a GPU with a RAM of less than 16GB, you may encounter the issue of <b>CUDA out of memory</b>. This issue may be because the local model updates (i.e., neural network models) stored inside the blocks occupy the CUDA memory and cannot be automatically released because the memory taken in CUDA increases as the communication round progresses. A few solutions have been tried without luck. </p>
 
-<p align="justify"> A temporary solution is to specify <b>-dtx 1</b>. This argument lets the program delete the transactions stored inside of the last block to release the CUDA memory as much as possible. However, specifying <b>-dtx 1</b> will also turn off the chain-resyncing functionality as the resyncing process requires enterprises to reperform global model updates based on the transactions stored inside of the resynced chain, which has empty transactions in each block. As a result, using GPU should only emulate the situation that FedAnil runs in its most ideal situation, that is, every available transaction would be recorded inside of the block of each round, as specified by the default arguments. </p>
+<p align="justify"> A temporary solution is to specify <b>-dtx 1</b>. This argument lets the program delete the transactions stored inside the last block to release the CUDA memory as much as possible. However, specifying <b>-dtx 1</b> will also turn off the chain-resyncing functionality as the resyncing process requires enterprises to reperform global model updates based on the transactions stored inside of the resynced chain, which has empty transactions in each block. As a result, using GPU should only emulate the situation that FedAnil runs in its most ideal situation; that is, every available transaction would be recorded inside of the block of each round, as specified by the default arguments. </p>
 
 Use [GitHub issues](https://github.com/tensorflow/federated/issues) for tracking
 requests and bugs.
@@ -153,7 +153,7 @@ If you publish work that uses FedAnil, please cite FedAnil as follows:
 This model is a research work and is provided as it is. We are not responsible for any user action or omission.
 
 ## Contact
-Please raise other issues and concerns you found. Thank you!
+Please don't hesitate to raise any other issues or concerns. Thank you!
 
 Email: Fotohi.reza@gmail.com
 
