@@ -150,7 +150,7 @@ If you publish work that uses FedAnil, please cite FedAnil as follows:
 
 ## Disclaimer
 
-This model is a research work and is provided as it is. We are not responsible for any user action or omission.
+This is research work and is provided as is. We are not responsible for any user action or omission.
 
 ## Contact
 Please don't hesitate to raise any other issues or concerns. Thank you!
