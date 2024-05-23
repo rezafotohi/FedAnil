@@ -142,9 +142,15 @@ If you publish work that uses FedAnil, please cite FedAnil as follows:
 ```bibtex
 @article{2024FedAnil,
   title={Decentralized and robust privacy-preserving model using blockchain-enabled Federated Deep Learning in intelligent enterprises},
-  author={R. Fotohi, F. S. Aliee, and B. Farahani},
+  author = {Reza Fotohi and Fereidoon {Shams Aliee} and Bahar Farahani},
   journal={Applied Soft Computing},
-  year={2024}
+  volume = {161},
+  pages = {111764},
+  year = {2024},
+  issn = {1568-4946},
+  doi = {https://doi.org/10.1016/j.asoc.2024.111764},
+  url = {https://www.sciencedirect.com/science/article/pii/S1568494624005386},
+  keywords = {Privacy-preserving, Federated learning, Poisoning attacks, Inference attacks, Intelligent enterprises},
 }
 ```
 
